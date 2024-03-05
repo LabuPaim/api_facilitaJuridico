@@ -1,5 +1,5 @@
 import { Pool } from "pg";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 dotenv.config();
 
@@ -12,6 +12,6 @@ const createConnection = async () => {
 	});
 
 	await client.connect();
-	return client;
+	return  client ;
 };
 export { createConnection };
