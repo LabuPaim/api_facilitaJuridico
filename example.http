@@ -1,0 +1,10 @@
+POST http://localhost:3000/client HTTP/1.1
+content-type: application/json;
+
+{
+    "name": "Victor Paim";
+	"email": "victorpaim80@gmail.com";
+	"telefone": "71983006611";
+	"coordenadax": 0;
+	"coordenaday": 0;
+}
