@@ -2,6 +2,16 @@
 
 Esta é uma API para gerenciar clientes e outras funcionalidades do sistema Facilita Jurídico.
 
+## Tecnologias Utilizadas
+
+* Node.js v14.18.3
+* TypeScript v5.3.3
+* Express.js v4.18.3
+* PostgreSQL v8.11.3
+* Cors v2.8.5
+* Dotenv v16.4.5
+* Uuid v9.0.1
+
 ## Configuração do Ambiente
 
 Antes de executar o servidor, certifique-se de configurar as variáveis de ambiente em um arquivo .env na raiz do projeto. Você pode usar o arquivo .env.example como um modelo. Renomeie-o para .env e preencha com as informações necessárias.
