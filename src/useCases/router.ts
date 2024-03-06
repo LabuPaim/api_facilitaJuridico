@@ -2,6 +2,7 @@ import { Router } from "express";
 import { createClientController } from "./createClient";
 import { findAllClientController } from "./findAllClient";
 import { findFilterClientController } from "./findFilter";
+import { findClientsFromOriginController } from "./findClientsFromOrigin";
 
 const router = Router();
 
@@ -15,6 +16,10 @@ router.get("/client", (req, res) => {
 
 router.get("/client/filter", (req, res) => {
 	return findFilterClientController.handle(req, res);
+});
+
+router.get("/client/fromOrigin", (req, res) => {
+    return findClientsFromOriginController.handle(req, res);
 });
 
 export { router };

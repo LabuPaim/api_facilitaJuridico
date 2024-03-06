@@ -5,8 +5,8 @@ class Client {
 	name: string;
 	email: string;
 	telefone: string;
-	coordenadax: string;
-	coordenaday: string;
+	coordenadax: number;
+	coordenaday: number;
 
 	constructor() {
 		if (!this.id) {

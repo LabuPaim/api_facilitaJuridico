@@ -34,6 +34,17 @@ class ClientPostgresRepository implements IClientRepositories {
         const { rows } = await this.client.query(query, [`%${filter}%`]);
         return rows;
     }
+
+    async findClientsFromOrigin(): Promise<Client[]> {
+        const query = `
+            SELECT * FROM CLIENT
+            WHERE
+                COORDENADAX = 0 AND
+                COORDENADAY = 0
+        `;
+        const { rows } = await this.client.query(query);
+        return rows;
+    }
 }
 
 export { ClientPostgresRepository };
