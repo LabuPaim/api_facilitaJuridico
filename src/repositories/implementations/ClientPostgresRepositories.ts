@@ -9,6 +9,7 @@ class ClientPostgresRepository implements IClientRepositories {
 	constructor() {
 		createConnection().then((client) => (this.client = client));
 	}
+	
 
 	async create({ id, name, email, telefone, coordenadax, coordenaday }: Client): Promise<void> {
 		await this.client.query(
@@ -18,9 +19,13 @@ class ClientPostgresRepository implements IClientRepositories {
 	}
 
 	async findAll(): Promise<Client[]> {
-		const { rows } = await this.client.query("SELECT * FROM CLIENT WHERE");
+		const { rows } = await this.client.query("SELECT * FROM CLIENT");
 
 		return rows
+	}
+
+	async findFilter(filter: string): Promise<Client[]> {
+		throw new Error("Method not implemented.");
 	}
 }
 
