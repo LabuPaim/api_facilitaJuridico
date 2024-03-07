@@ -2,6 +2,9 @@
 
 Esta é uma API para gerenciar clientes e outras funcionalidades do sistema Facilita Jurídico.
 
+## Vídeo Explicativo
+
+
 ## Tecnologias Utilizadas
 
 * Node.js v14.18.3
