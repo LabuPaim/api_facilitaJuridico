@@ -3,7 +3,7 @@
 Esta é uma API para gerenciar clientes e outras funcionalidades do sistema Facilita Jurídico.
 
 ## Vídeo Explicativo
-
+https://youtu.be/UMQpYDMr8SM
 
 ## Tecnologias Utilizadas
 
